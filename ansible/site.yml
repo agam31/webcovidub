@@ -1,0 +1,83 @@
+---
+
+- name: Prepare Environment for API Server
+  hosts: all
+
+  vars:
+
+    docker_install_compose: false
+    pip_package: python36-pip
+    pip_install_packages:
+      - name: docker
+      - name: docker-compose
+
+  pre_tasks:
+
+    - name: Install MariaDB repository
+      yum_repository:
+        name: mariadb
+        description: MariaDB
+        baseurl: http://yum.mariadb.org/10.3/centos7-amd64
+        gpgcheck: true
+        gpgkey: https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+
+    - name: Override variables for MySQL (RedHat).
+      set_fact:
+        mysql_log_error: /var/lib/mysql/{{ ansible_fqdn }}.err
+        mysql_pid_file: /var/lib/mysql/{{ ansible_fqdn }}.pid
+        mysql_socket: /var/lib/mysql/mysql.sock
+
+    - name: Install some dependencies
+      yum:
+        name:
+          - gcc
+          - python36-devel
+        state: present
+
+  roles:
+
+    - geerlingguy.repo-epel
+    - geerlingguy.mysql
+    - geerlingguy.pip
+    - geerlingguy.docker
+
+- name: Deploy Docker Images
+  hosts: all
+
+  vars:
+    
+    ansible_python_interpreter: /usr/bin/python3
+
+  pre_tasks:
+
+    - name: Log into DockerHub
+      docker_login:
+        username: "{{ docker_username }}"
+        password: "{{ docker_password }}"
+    
+  tasks:
+
+    - name: Create App Directory
+      file:
+        path: /opt/auto-tools
+        state: directory
+
+    - name: Copy all repo file to server
+      synchronize:
+        src: "{{ playbook_dir }}/../"
+        dest: /opt/auto-tools
+        rsync_opts:
+          - "--exclude=.git --exclude=vendor"
+        delete: true
+
+    - name: Build Docker app images
+      docker_compose:
+        project_src: /opt/auto-tools
+        build: true
+        state: present
+
+  post_tasks:
+
+    - name: Log out of DockerHub
+      docker_login:
+        state: absent

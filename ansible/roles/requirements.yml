@@ -1,0 +1,6 @@
+---
+
+- src: geerlingguy.repo-epel
+- src: geerlingguy.mysql
+- src: geerlingguy.pip
+- src: geerlingguy.docker

@@ -1,0 +1,5 @@
+.idea/
+.ansible/
+.conf/
+.docker-compose.yml
+.docker-compose-local.yml

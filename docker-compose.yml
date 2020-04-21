@@ -1,0 +1,22 @@
+version: '3.2'
+services:
+
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    hostname: "rabbitmq"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  app:
+    image: "jagoanhosting/webapi"
+    volumes:
+      - ./src:/srv/www
+      - ./conf/supervisord.d:/etc/supervisord.d
+    ports:
+      - "80:80"

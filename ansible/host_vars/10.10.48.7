@@ -1,0 +1,17 @@
+---
+
+mysql_databases:
+  - name: tools
+    state: present
+  - name: autotools
+    state: present
+
+mysql_users:
+  - name: tools
+    host: localhost
+    password: Beoncakt0p
+    priv: 'tools.*:ALL'
+  - name: autotools
+    host: localhost
+    password: Beoncakt0p
+    priv: 'autotools.*:ALL'
