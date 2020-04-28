@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/8c953be2c7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
+<header class="mini-header">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light static-top ">
         <div class="container-fluid header-container container-default">
@@ -63,31 +63,6 @@
             </div>
         </div>
     </nav>
-
-    <section id="top-banner">
-        <div class="container-fluid container-default">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner-caption-wrapper">
-                        <div class="banner-caption">
-                            <h1>Hub UB Covid-19</h1>
-                            <h3>Portal GIS Monitoring Status COVID-19
-                                di Jawa Timur dan Malang Raya
-                            </h3>
-                            <a href="" class="btn btn-success caption-btn"> Cari tahu yuk! </a>
-                            <blockquote class="blockquote caption-desc">Situs ini dikelola secara swadaya oleh tim GIS dari TEAM SATUAN TUGAS (SATGAS)
-                                COVID-19 UNIVERSITAS BRAWIJAYA yang berisi informasi untuk masyarakat seputar
-                                penyakit COVID-19  di area Jawa Timur dan Malang Raya.
-                            </blockquote>
-                        </div>
-                    </div>
-                    <div class="banner-image-wrapper">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </header>
 <div class="body-wrap">
     <section id="data-covid-section" style="margin-bottom: 60px;">
@@ -188,84 +163,6 @@
                         <div class="map-footer text-center">
                             <p>Sumber: <a href="https://ub-gis.maps.arcgis.com/apps/opsdashboard/index.html#/9064df11534047f3a85dd98420018bff">Infeksi Emerging Kemenkes RI  |  Pemerintah Provinsi Jawa Timur</a></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="news-section">
-        <div class="container container-default">
-            <h2>Informasi Terkini Seputar Covid-19</h2>
-            <div class="row">
-                <div class="col-md-12 heroSlider-fixed">
-                    <!-- control arrows -->
-                    <div class="prev">
-                        <span class="fa fa-arrow-left" aria-hidden="true"></span>
-                    </div>
-                    <div class="next">
-                        <span class="fa fa-arrow-right" aria-hidden="true"></span>
-                    </div>
-
-                    <div class="overlay">
-                    </div>
-                    <!-- Slider -->
-                    <div class="slider responsive">
-                        <div>
-                            <a class="twitter-timeline" data-height="400" data-width="400" href="https://twitter.com/KemenkesRI?ref_src=twsrc%5Etfw">Tweets by KemenkesRI</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                        <div>
-                            <a class="twitter-timeline" data-height="400" data-width="400" href="https://twitter.com/PemkotMalang?ref_src=twsrc%5Etfw">Tweets by PemkotMalang</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                        <div>
-                            <a class="twitter-timeline" data-height="400" data-width="400" href="https://twitter.com/kominfobatukota?ref_src=twsrc%5Etfw">Tweets by kominfobatukota</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                        <div>
-                            <a class="twitter-timeline" data-height="400" data-width="400" href="https://twitter.com/Pemkab_Malang?ref_src=twsrc%5Etfw">Tweets by Pemkab_Malang</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="another-section">
-        <div class="container container-default">
-            <h2> Situs resmi Pemerintah terkait Covid-19 </h2>
-            <div class="row">
-                <div class="col-md-5th-1 col-md-offset-0 col-sm-offset-2">
-                    <div class="image-icon-wrapper" style="
-    width: 105px;
-">
-                        <a href=""><img src="/assets/images/ri.png"></a>
-                    </div>
-                </div>
-                <div class="col-md-5th-1 ">
-                    <div class="image-icon-wrapper" style="
-    width: 79px;
-">
-                        <a href=""><img src="/assets/images/jatim.png"></a>
-                    </div>
-                </div>
-                <div class="col-md-5th-1 ">
-                    <div class="image-icon-wrapper" style="
-    width: 100px;
-">
-                        <a href=""><img src="/assets/images/malang.png"></a>
-                    </div>
-                </div>
-                <div class="col-md-5th-1 ">
-                    <div class="image-icon-wrapper" style="
-    width: 200px;
-">
-                        <a href=""><img src="/assets/images/kemenkes.png"></a>
-                    </div>
-                </div>
-                <div class="col-md-5th-1 ">
-                    <div class="image-icon-wrapper" style="
-    width: 105px;
-">
-                        <a href=""><img src="/assets/images/bnpb.png"></a>
                     </div>
                 </div>
             </div>

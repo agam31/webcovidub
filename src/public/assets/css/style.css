@@ -757,3 +757,14 @@ section#footer {
     padding-right: 30px;
     font-size: 24px;
 }
+header.mini-header {
+    min-height: 60px;
+}
+.card.card-no-border{
+    border: none;
+}
+.panel-todo {
+    max-width: 300px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
