@@ -113,3 +113,140 @@ if (typeof jQuery === "undefined") {
         //.on('focus.mr.searchbar.data-api', toggle, Searchbar.prototype.toggle) // this causes the focus event to trigger twice
         .on("click.mr.searchbar.data-api", toggle, Searchbar.prototype.toggle);
 })(jQuery);
+
+
+$('.responsive').slick({
+    dots: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+/*Iframe Javascript*/
+// $('#map-covid-iframe').on('load', function(){
+//     var iframe = document.getElementById("map-covid-iframe");
+//     var elmnt = iframe.contentWindow.document.getElementsByTagName("H1")[0];
+//     console.log(elmnt);
+// });
+var WebCovidUBSDK = {
+    dataset: {
+        getPositifJatim: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22POSITIF%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-positif-jatim').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getDiedJatim: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22MENINGGAL%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-died-jatim').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getCuredJatim: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22SEMBUH%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-cured-jatim').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getODPJatim: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22ODP%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-odp-jatim').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getPDPJatim: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22PDP%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-pdp-jatim').find('.data-covid-number').html(valueparse);
+                }
+            });
+        }
+    },
+    init:function () {
+        WebCovidUBSDK.dataset.getPositifJatim();
+        WebCovidUBSDK.dataset.getDiedJatim();
+        WebCovidUBSDK.dataset.getCuredJatim();
+        WebCovidUBSDK.dataset.getODPJatim();
+        WebCovidUBSDK.dataset.getPDPJatim();
+    }
+};
+WebCovidUBSDK.init();
+
+
+
+
+
+// $.get( "https://ub-gis.maps.arcgis.com/apps/opsdashboard/index.html#/9064df11534047f3a85dd98420018bff", function( data ) {
+//     $( ".result" ).html( data );
+//     alert( "Load was performed." );
+// });
