@@ -28,4 +28,7 @@ Route::get('/data', function () {
 Route::get('/detector', function () {
     return view('detector');
 });
+Route::get('/tips', function () {
+    return view('tips');
+});
 

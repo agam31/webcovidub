@@ -66,24 +66,22 @@
 <div class="body-wrap">
     <section>
         <div class="container container-default container-mini" style="margin-bottom: 0px; padding-top: 0px;">
-            <h1 style="margin-bottom: 30px;" class="text-center"> Deteksi Diri Covid 19 </h1>
+            <h1 style="margin-bottom: 15px;" class="text-center"> Pencegahan Covid-19 </h1>
+            <h5 style="margin-bottom: 30px;" class="text-center">Ambil Langkah Untuk Melindungi Diri Anda dan Orang Lain </h5>
             <div class="row" style="margin-bottom: 30px;">
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width: 300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/selfassessment.png" alt="Card image cap" style="width: 200px;
-    margin: 0px auto;">
+                        <img class="card-img-top" src="/assets/images/handwash.jpg" alt="Card image cap">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href=""> Self Assesment Jawa Timur </a></h4>
+                            <h4 class="card-title">Cuci Tangan</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width:300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/coronadetector.png" alt="Card image cap" style="width: 200px;
-    margin: 0px auto;">
+                        <img class="card-img-top" src="/assets/images/distancing.jpg" alt="Card image cap" style="width: 273px;">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href=""> Corona Detector
-                                    Kota Malang </a> </h4>
+                            <h4 class="card-title">Hindari Kontak Fisik </h4>
                         </div>
                     </div>
                 </div>
@@ -91,21 +89,39 @@
             <div class="row" style="margin-bottom: 30px;">
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width: 300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/penapisanub.png" alt="Card image cap" style="width: 200px;
-    margin: 0px auto;">
+                        <img class="card-img-top" src="/assets/images/wfh.jpg" alt="Card image cap" style="">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href=""> Penapisan Dosen
-                                    dan Tendik UB </a></h4>
+                            <h4 class="card-title">Diam di Rumah
+                                Jika Sakit</h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width:300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/penapisanmhs.png" alt="Card image cap" style="width: 200px;
-    margin: 0px auto;">
+                        <img class="card-img-top" src="/assets/images/cough.jpg" alt="Card image cap" style="">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href=""> Penapisan
-                                    Mahasiswa UB </a> </h4>
+                            <h4 class="card-title">Terapkan Etika
+                                Batuk dan Bersin </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-md-6">
+                    <div class="card card-no-border" style="width: 300px; margin: 0px auto; background: none;">
+                        <img class="card-img-top" src="/assets/images/masker.jpg" alt="Card image cap" style="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Kenakan Masker
+                                Jika Sakit</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card card-no-border" style="width:300px; margin: 0px auto; background: none;">
+                        <img class="card-img-top" src="/assets/images/cleaning.jpg" alt="Card image cap" style="">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Bersihkan dan
+                                Disinfeksi</h4>
                         </div>
                     </div>
                 </div>
