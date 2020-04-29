@@ -24,3 +24,8 @@ Route::get('/about', function () {
 Route::get('/data', function () {
     return view('data');
 });
+
+Route::get('/detector', function () {
+    return view('detector');
+});
+
