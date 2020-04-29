@@ -57,10 +57,7 @@ var VpsXSdk = {
                 jQuery('#button-order-X2').removeClass('orderbtndisbled');
                 jQuery('#button-order-X2').attr('href', VpsXSdk.configx2[currentvalue].url);
             }
-
-
         });
-
         jQuery('select#select-region-x3').on('change', function (e) {
             e.preventDefault();
             var currentvalue = jQuery(this).val();
@@ -84,7 +81,53 @@ var VpsXSdk = {
             console.log('fsdfsdf');
         });
 
+
+        jQuery('select#select-region-x1-mobile').on('change', function (e) {
+            e.preventDefault();
+            var currentvalue = jQuery(this).val();
+            jQuery('#strike-price-x1-mobile').html(VpsXSdk.config[currentvalue].strikeprice);
+            jQuery('#price-x1-mobile').find('b').html(VpsXSdk.config[currentvalue].price);
+            jQuery('#button-order-X1-mobile').attr('href', VpsXSdk.config[currentvalue].url);
+        });
+
+        jQuery('select#select-region-x2-mobile').on('change', function (e) {
+            e.preventDefault();
+            var currentvalue = jQuery(this).val();
+            jQuery('#button-order-X2-mobile').html(VpsXSdk.configx2[currentvalue].buttontext);
+            if(VpsXSdk.configx2[currentvalue].disablebutton==true){
+                jQuery('#button-order-X2-mobile').addClass('orderbtndisbled');
+                jQuery('#button-order-X2-mobile').removeAttr('href');
+
+            }else{
+                jQuery('#button-order-X2-mobile').removeClass('orderbtndisbled');
+                jQuery('#button-order-X2-mobile').attr('href', VpsXSdk.configx2[currentvalue].url);
+            }
+        });
+        jQuery('select#select-region-x3-mobile').on('change', function (e) {
+            e.preventDefault();
+            var currentvalue = jQuery(this).val();
+            jQuery('#button-order-X3-mobile').html(VpsXSdk.configx3[currentvalue].buttontext);
+            if(VpsXSdk.configx2[currentvalue].disablebutton==true){
+                jQuery('#button-order-X3-mobile').addClass('orderbtndisbled');
+                jQuery('#button-order-X3-mobile').removeAttr('href');
+            }else{
+                jQuery('#button-order-X3-mobile').removeClass('orderbtndisbled');
+                jQuery('#button-order-X3-mobile').attr('href', VpsXSdk.configx3[currentvalue].url);
+            }
+
+        });
+
+        jQuery('#button-order-X2-mobile.orderbtndisbled').on('click', function (e) {
+            e.preventDefault();
+            console.log('fdsfsdf');
+        });
+        jQuery('#button-order-X3-mobile.orderbtndisbled').on('click', function (e) {
+            e.preventDefault();
+            console.log('fsdfsdf');
+        });
+
     }
+
 };
 VpsXSdk.init();
 

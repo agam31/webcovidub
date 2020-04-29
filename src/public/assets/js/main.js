@@ -230,6 +230,76 @@ var WebCovidUBSDK = {
                     $('#data-pdp-jatim').find('.data-covid-number').html(valueparse);
                 }
             });
+        },
+        getPositiMalang: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Kota_Malang_2_0/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22POSITIF%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-positif-malang').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getDiedMalang: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=KAB_KOTA%3D%27Kota%20Malang%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22MENINGGAL%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-died-malang').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getCuredMalang: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Jatim/FeatureServer/0/query?f=json&where=KAB_KOTA%3D%27Kota%20Malang%27&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22SEMBUH%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-cured-malang').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getODPMalang: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Kota_Malang_2_0/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22ODP%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-odp-malang').find('.data-covid-number').html(valueparse);
+                }
+            });
+        },
+        getPDPMalang: function () {
+            $.ajax({
+                url: 'https://services8.arcgis.com/yTQgcgZWR10MGhD2/arcgis/rest/services/Data_Covid_Kota_Malang_2_0/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&outStatistics=%5B%7B%22statisticType%22%3A%22sum%22%2C%22onStatisticField%22%3A%22PDP%22%2C%22outStatisticFieldName%22%3A%22value%22%7D%5D&outSR=102100&resultType=standard&cacheHint=true',
+                type: 'GET',
+                // dataType: 'json',
+                success: function(data) {
+                    var jsondata    = JSON.parse(data);
+                    console.log(jsondata);
+                    var valueparse  = jsondata.features[0].attributes.value;
+                    console.log(valueparse);
+                    $('#data-pdp-malang').find('.data-covid-number').html(valueparse);
+                }
+            });
         }
     },
     init:function () {
@@ -238,6 +308,11 @@ var WebCovidUBSDK = {
         WebCovidUBSDK.dataset.getCuredJatim();
         WebCovidUBSDK.dataset.getODPJatim();
         WebCovidUBSDK.dataset.getPDPJatim();
+        WebCovidUBSDK.dataset.getPositiMalang();
+        WebCovidUBSDK.dataset.getDiedMalang();
+        WebCovidUBSDK.dataset.getCuredMalang();
+        WebCovidUBSDK.dataset.getODPMalang();
+        WebCovidUBSDK.dataset.getPDPMalang();
     }
 };
 WebCovidUBSDK.init();
