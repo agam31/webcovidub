@@ -38,10 +38,10 @@
                         <a class="nav-link" href="/data"> Data </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Deteksi Diri </a>
+                        <a class="nav-link" href="/detector"> Deteksi Diri </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Info dan Tips </a>
+                        <a class="nav-link" href="/tips"> Info dan Tips </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"> Kontak </a>
