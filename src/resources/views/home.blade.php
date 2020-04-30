@@ -47,17 +47,17 @@
                         <a class="nav-link" href="#"> Kontak </a>
                     </li>
                 </ul>
-                <form class="search-form searchbar" role="search" id="hiddenSearchBox" action="" method="get">
-                    <div class="input-group">
-                        <input type="hidden" name="id" value="63">
-                        <input type="search" name="keywords" class="form-control" placeholder="Search..">
-                        <div class="input-group-btn">
-                            <button type="submit" class="btn btn-default" data-toggle="searchbar" data-target="#hiddenSearchBox">
-                                <span class="fa fa-search"></span> <span class="sr-only">Submit</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+                {{--<form class="search-form searchbar" role="search" id="hiddenSearchBox" action="" method="get">--}}
+                    {{--<div class="input-group">--}}
+                        {{--<input type="hidden" name="id" value="63">--}}
+                        {{--<input type="search" name="keywords" class="form-control" placeholder="Search..">--}}
+                        {{--<div class="input-group-btn">--}}
+                            {{--<button type="submit" class="btn btn-default" data-toggle="searchbar" data-target="#hiddenSearchBox">--}}
+                                {{--<span class="fa fa-search"></span> <span class="sr-only">Submit</span>--}}
+                            {{--</button>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</form>--}}
                 <a href="https://sc19.ub.ac.id/apk/app-release.apk" type="button" class="btn btn-outline-info btn-sm login-btn"> Login </a>
 
             </div>
