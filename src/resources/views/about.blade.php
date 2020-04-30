@@ -58,7 +58,7 @@
                         {{--</div>--}}
                     {{--</div>--}}
                 {{--</form>--}}
-                <a href="https://sc19.ub.ac.id/apk/app-release.apk" type="button" class="btn btn-outline-info btn-sm login-btn"> Login </a>
+                <a href="https://sc19.ub.ac.id/" type="button" class="btn btn-outline-info btn-sm login-btn"> Login </a>
             </div>
         </div>
     </nav>
