@@ -44,7 +44,7 @@
                         <a class="nav-link" href="/tips"> Info dan Tips </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Kontak </a>
+                        <a class="nav-link" href="/contacts"> Kontak </a>
                     </li>
                 </ul>
                 {{--<form class="search-form searchbar" role="search" id="hiddenSearchBox" action="" method="get">--}}

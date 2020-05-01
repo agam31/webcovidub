@@ -31,4 +31,7 @@ Route::get('/detector', function () {
 Route::get('/tips', function () {
     return view('tips');
 });
+Route::get('/contacts', function () {
+    return view('contacts');
+});
 
