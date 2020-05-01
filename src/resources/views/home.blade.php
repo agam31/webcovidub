@@ -74,7 +74,7 @@
                             <h3>Portal GIS Monitoring Status COVID-19
                                 di Jawa Timur dan Malang Raya
                             </h3>
-                            <a href="" class="btn btn-success caption-btn"> Cari tahu yuk! </a>
+                            <a href="#data-covid-section" class="btn btn-success caption-btn"> Cari tahu yuk! </a>
                             <blockquote class="blockquote caption-desc">Situs ini dikelola secara swadaya oleh tim GIS dari TEAM SATUAN TUGAS (SATGAS)
                                 COVID-19 UNIVERSITAS BRAWIJAYA yang berisi informasi untuk masyarakat seputar
                                 penyakit COVID-19  di area Jawa Timur dan Malang Raya.

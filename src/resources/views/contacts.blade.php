@@ -353,7 +353,7 @@
                     <p>Anda Dapat Melakukan Pemantauan Situasi Kota
                         Malang Saat ini Dengan Klik Link Berikut
                     </p>
-                    <a class="btn btn-secondary btn-lg" style="width: 200px; border-radius: 30px; color: white;">Cari tahu yuk!</a>
+                    <a href="http://cctv.malangkota.go.id/cameras" target="_blank" class="btn btn-secondary btn-lg" style="width: 200px; border-radius: 30px; color: white;">Cari tahu yuk!</a>
                 </div>
                 <div class="col-md-6 offset-md-1">
                     <div class="card card-no-border" style="

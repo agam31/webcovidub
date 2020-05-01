@@ -774,3 +774,6 @@ header.mini-header {
 .address-card .card-title{
     color: #333456;
 }
+html{
+    scroll-behavior: smooth;
+}
