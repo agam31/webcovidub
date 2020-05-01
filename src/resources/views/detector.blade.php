@@ -73,7 +73,7 @@
                         <img class="card-img-top" src="/assets/images/selfassessment.png" alt="Card image cap" style="width: 200px;
     margin: 0px auto;">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href=""> Self Assesment Jawa Timur </a></h4>
+                            <h4 class="card-title"><a target="_blank" href="https://checkupcovid19.jatimprov.go.id/covid19/"> Self Assesment Jawa Timur </a></h4>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                         <img class="card-img-top" src="/assets/images/coronadetector.png" alt="Card image cap" style="width: 200px;
     margin: 0px auto;">
                         <div class="card-body text-center">
-                            <h4 class="card-title"><a href=""> Corona Detector
+                            <h4 class="card-title"><a target="_blank" href="https://coronadetektor.malangkota.go.id/"> Corona Detector
                                     Kota Malang </a> </h4>
                         </div>
                     </div>

@@ -71,7 +71,7 @@
             <div class="row" style="margin-bottom: 30px;">
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width: 300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/handwash.jpg" alt="Card image cap">
+                        <img class="card-img-top" style="height: 300px;" src="/assets/images/handwash.png" alt="Card image cap">
                         <div class="card-body text-center">
                             <h4 class="card-title">Cuci Tangan</h4>
                         </div>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width:300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/distancing.jpg" alt="Card image cap" style="width: 273px;">
+                        <img class="card-img-top" src="/assets/images/distancing.png"  alt="Card image cap" style="height: 300px;">
                         <div class="card-body text-center">
                             <h4 class="card-title">Hindari Kontak Fisik </h4>
                         </div>
@@ -89,7 +89,7 @@
             <div class="row" style="margin-bottom: 30px;">
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width: 300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/wfh.jpg" alt="Card image cap" style="">
+                        <img class="card-img-top" src="/assets/images/wfh.png" alt="Card image cap" style="height: 300px;">
                         <div class="card-body text-center">
                             <h4 class="card-title">Diam di Rumah
                                 Jika Sakit</h4>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width:300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/cough.jpg" alt="Card image cap" style="">
+                        <img class="card-img-top" src="/assets/images/coughetic.png" alt="Card image cap" style="height: 300px;">
                         <div class="card-body text-center">
                             <h4 class="card-title">Terapkan Etika
                                 Batuk dan Bersin </h4>
@@ -109,7 +109,7 @@
             <div class="row" style="margin-bottom: 30px;">
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width: 300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/masker.jpg" alt="Card image cap" style="">
+                        <img class="card-img-top" src="/assets/images/masker.png" alt="Card image cap" style="height: 300px;">
                         <div class="card-body text-center">
                             <h4 class="card-title">Kenakan Masker
                                 Jika Sakit</h4>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card card-no-border" style="width:300px; margin: 0px auto; background: none;">
-                        <img class="card-img-top" src="/assets/images/cleaning.jpg" alt="Card image cap" style="">
+                        <img class="card-img-top" src="/assets/images/cleaning.png" alt="Card image cap" style="height: 300px;">
                         <div class="card-body text-center">
                             <h4 class="card-title">Bersihkan dan
                                 Disinfeksi</h4>
