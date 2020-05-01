@@ -173,7 +173,7 @@
                             <div class="col-md-2"><h1>1</h1></div>
                             <div class="col-md-10">
                                 <div class="card card-no-border" style="margin: 0px auto; background: none;">
-                                    <img class="card-img-top" src="/assets/images/stayhome.png" alt="Card image cap" style="width: 200px;
+                                    <img class="card-img-top" src="/assets/images/stayhome2.png" alt="Card image cap" style="width: 200px;
     margin: 0px auto;">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Tetap di Rumah</h5>
@@ -189,7 +189,7 @@
                             <div class="col-md-2"><h1>2</h1></div>
                             <div class="col-md-10">
                                 <div class="card card-no-border" style="margin: 0px auto; background: none;">
-                                    <img class="card-img-top" src="/assets/images/calldoctor.webp" alt="Card image cap" style="width: 200px;
+                                    <img class="card-img-top" src="/assets/images/calldoctor2.png" alt="Card image cap" style="width: 200px;
     margin: 0px auto;">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Buat janji sebelum
@@ -210,7 +210,7 @@
                             </div>
                             <div class="col-md-10">
                                 <div class="card card-no-border" style="margin: 0px auto; background: none;">
-                                    <img class="card-img-top" src="/assets/images/hospital.png" alt="Card image cap" style="width: 200px;
+                                    <img class="card-img-top" src="/assets/images/hospital2.png" alt="Card image cap" style="width: 200px;
     margin: 0px auto;">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Pergi ke rumah sakit
