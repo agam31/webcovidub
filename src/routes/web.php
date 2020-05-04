@@ -13,25 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/webcovidub', function () {
     return view('home');
 });
 
-Route::get('/about', function () {
+Route::get('/webcovidub/about', function () {
     return view('about');
 });
 
-Route::get('/data', function () {
+Route::get('/webcovidub/data', function () {
     return view('data');
 });
 
-Route::get('/detector', function () {
+Route::get('/webcovidub/detector', function () {
     return view('detector');
 });
-Route::get('/tips', function () {
+Route::get('/webcovidub/tips', function () {
     return view('tips');
 });
-Route::get('/contacts', function () {
+Route::get('/webcovidub/contacts', function () {
     return view('contacts');
 });
 

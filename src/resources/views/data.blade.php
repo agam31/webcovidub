@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/assets/libs/bootstrap-4.4.1-dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/webcovidub/assets/libs/bootstrap-4.4.1-dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/webcovidub/assets/css/style.css">
     <title>Web Covid UB</title>
     <script src="https://kit.fontawesome.com/8c953be2c7.js" crossorigin="anonymous"></script>
 </head>
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light static-top ">
         <div class="container-fluid header-container container-default">
             <a class="navbar-brand" href="#">
-                <img class="logo" src="/assets/images/logo.png" alt="">
+                <img class="logo" src="/webcovidub/assets/images/logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,24 +27,24 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="leftmenu">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Home
+                        <a class="nav-link" href="/webcovidub">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/about"> Tentang Covid-19 </a>
+                        <a class="nav-link" href="/webcovidub/about"> Tentang Covid-19 </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/data"> Data </a>
+                        <a class="nav-link" href="/webcovidub/data"> Data </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/detector"> Deteksi Diri </a>
+                        <a class="nav-link" href="/webcovidub/detector"> Deteksi Diri </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/tips"> Info dan Tips </a>
+                        <a class="nav-link" href="/webcovidub/tips"> Info dan Tips </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/contacts"> Kontak </a>
+                        <a class="nav-link" href="/webcovidub/contacts"> Kontak </a>
                     </li>
                 </ul>
                 {{--<form class="search-form searchbar" role="search" id="hiddenSearchBox" action="" method="get">--}}
@@ -275,7 +275,7 @@
                     <div class="address-info text-left">
                         <div class="row">
                             <div class="col-md-2">
-                                <img src="/assets/images/logo.png">
+                                <img src="/webcovidub/assets/images/logo.png">
                             </div>
                             <div class="col-md-10">
                                 <h3>Universitas Brawijaya</h3>
@@ -300,8 +300,8 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/assets/libs/bootstrap-4.4.1-dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/webcovidub/assets/libs/bootstrap-4.4.1-dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script>
-<script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="/webcovidub/assets/js/main.js"></script>
 </body>
 </html>
