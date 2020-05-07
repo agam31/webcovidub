@@ -778,3 +778,44 @@ header.mini-header {
 html{
     scroll-behavior: smooth;
 }
+
+@media only screen and (max-width: 600px) {
+    .banner-caption h1{
+        font-size: 30px;
+    }
+    .banner-caption h3{
+        font-size: 18px;
+    }
+    .banner-caption{
+        text-align: center;
+    }
+    .banner-caption blockquote{
+        font-size: 12px;
+    }
+    header {
+        min-height: 360px;
+    }
+    .banner-caption-wrapper{
+        margin-bottom: 30px;
+    }
+    #map-covid-iframe{
+        width: 100%;
+        min-height: 300px;
+        border-radius: 25px;
+    }
+    .body-wrap .container-default{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .address-image {
+        width: 150px;
+        margin: 0px auto;
+    }
+    .address-info{
+        text-align: center !important;
+    }
+}
+
+.card.card-data-covid{
+    margin-bottom: 20px;
+}

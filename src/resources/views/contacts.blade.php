@@ -1,59 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/webcovidub/assets/libs/bootstrap-4.4.1-dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/webcovidub/assets/css/style.css">
-    <title>Web Covid UB</title>
-    <script src="https://kit.fontawesome.com/8c953be2c7.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<header class="mini-header">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light static-top ">
-        <div class="container-fluid header-container container-default">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="/webcovidub/assets/images/logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+@extends('layouts.app')
+@section('title', 'Homepage')
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="leftmenu">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/webcovidub">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/webcovidub/about"> Tentang Covid-19 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/webcovidub/data"> Data </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/webcovidub/detector"> Deteksi Diri </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/webcovidub/tips"> Info dan Tips </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/webcovidub/contacts"> Kontak </a>
-                    </li>
-                </ul>
-                <a href="https://sc19.ub.ac.id/" type="button" class="btn btn-outline-info btn-sm login-btn"> Login </a>
+@section('header')
+    @parent
+    @yield('defaultheader', View::make('layouts.miniheader'))
+@endsection
 
-            </div>
-        </div>
-    </nav>
-</header>
-<div class="body-wrap">
+
+@section('content')
     <section id="data-covid-section" style="">
         <div class="container container-default container-mini" style="padding-bottom: 0px;">
             <h1 class="text-center" style="color: #333456;">Daftar Rumah Sakit Rujukan</h1>
@@ -360,48 +314,10 @@
     margin-top: -90px;
     margin-right: -120px;
 ">
-                        <img class="card-img-top" src="/webcovidub/assets/images/cctv.jpg" alt="Card image cap" style="">
+                        <img class="card-img-top" src="/assets/images/cctv.jpg" alt="Card image cap" style="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-</div>
-<footer>
-    <section id="footer">
-        <div class="container-default container container-mini">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="address-info text-left">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img src="/webcovidub/assets/images/logo.png">
-                            </div>
-                            <div class="col-md-10">
-                                <h3>Universitas Brawijaya</h3>
-                                <p>Jl. Veteran Malang, Ketawanggede,</p>
-                                <p>Kec. Lowokwaru, Kota Malang, Jawa Timur 65145</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact-info text-right">
-                        <p>Phone: +62-341-551611</p>
-                        <p>Email: http://humas.ub.ac.id/</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
-<div class="result"></div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/webcovidub/assets/libs/bootstrap-4.4.1-dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script>
-<script type="text/javascript" src="/webcovidub/assets/js/main.js"></script>
-</body>
-</html>
+@endsection
